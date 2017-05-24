@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 gem 'rails',        '5.0.1'
+gem 'bootstrap-sass', '3.3.6'
 gem 'puma',         '3.4.0'
 gem 'sass-rails',   '5.0.6'
 gem 'uglifier',     '3.0.0'
@@ -14,6 +15,15 @@ group :development, :test do
   gem 'sqlite3', '1.3.11'
   gem 'byebug',  '9.0.0', platform: :mri
 end
+
+group :test do
+  gem 'minitest', '~> 5.10', '!= 5.10.2' # add this here to fix error
+  gem 'rails-controller-testing'
+
+end
+
+gem 'minitest', '~> 5.10', '!= 5.10.2' # add this here to fix error
+
 
 group :development do
   gem 'web-console',           '3.1.1'
