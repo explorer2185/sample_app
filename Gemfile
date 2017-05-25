@@ -24,8 +24,6 @@ group :test do
 
 end
 
-gem 'minitest', '~> 5.10', '!= 5.10.2' # add this here to fix error
-
 
 group :development do
   gem 'web-console',           '3.1.1'
